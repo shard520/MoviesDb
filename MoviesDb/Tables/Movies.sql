@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Movies] 
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [Name] NVARCHAR(50) NOT NULL, 
+    [MovieName] NVARCHAR(50) NOT NULL UNIQUE, 
     [YearOfRelease] INT NULL, 
     [Rating] DECIMAL(2, 1) NULL, 
-    [CreatedDate] DATETIMEOFFSET NOT NULL, 
-    [UpdatedDate] DATETIMEOFFSET NULL 
+    [CreatedDate] DATETIME2(7) NOT NULL, 
+    [UpdatedDate] DATETIME2(7) NULL 
 )

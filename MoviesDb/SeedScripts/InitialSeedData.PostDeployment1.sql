@@ -11,14 +11,14 @@ Post-Deployment Script Template
 */
 
 SET IDENTITY_INSERT [dbo].[Actors] ON
-INSERT INTO [dbo].[Actors] ([Id], [Name], [CreatedDate]) VALUES (1, N'Keanu Reeves', SYSDATETIMEOFFSET())
-INSERT INTO [dbo].[Actors] ([Id], [Name], [CreatedDate]) VALUES (2, N'Alex Winter', SYSDATETIMEOFFSET())
+INSERT INTO [dbo].[Actors] ([Id], [ActorName], [CreatedDate]) VALUES (1, N'Keanu Reeves', SYSDATETIMEOFFSET())
+INSERT INTO [dbo].[Actors] ([Id], [ActorName], [CreatedDate]) VALUES (2, N'Alex Winter', SYSDATETIMEOFFSET())
 SET IDENTITY_INSERT [dbo].[Actors] OFF
 
 SET IDENTITY_INSERT [dbo].[Movies] ON
-INSERT INTO [dbo].[Movies] ([Id], [Name], [Rating], [YearOfRelease], [CreatedDate]) VALUES (1, N'The Matrix', 8, 1999, SYSDATETIMEOFFSET())
-INSERT INTO [dbo].[Movies] ([Id], [Name], [Rating], [YearOfRelease], [CreatedDate]) VALUES (2, N'Bill and Ted''s Excellent Adventure', 9, 1989, SYSDATETIMEOFFSET())
-INSERT INTO [dbo].[Movies] ([Id], [Name], [Rating], [YearOfRelease], [CreatedDate]) VALUES (3, N'The Lost Boys', 6, 1987, SYSDATETIMEOFFSET())
+INSERT INTO [dbo].[Movies] ([Id], [MovieName], [Rating], [YearOfRelease], [CreatedDate]) VALUES (1, N'The Matrix', 9, 1999, SYSDATETIMEOFFSET())
+INSERT INTO [dbo].[Movies] ([Id], [MovieName], [Rating], [YearOfRelease], [CreatedDate]) VALUES (2, N'Bill and Ted''s Excellent Adventure', 9, 1989, SYSDATETIMEOFFSET())
+INSERT INTO [dbo].[Movies] ([Id], [MovieName], [Rating], [YearOfRelease], [CreatedDate]) VALUES (3, N'The Lost Boys', 6, 1987, SYSDATETIMEOFFSET())
 SET IDENTITY_INSERT [dbo].[Movies] OFF
 
 INSERT INTO [dbo].[MovieActors] ([MovieId], [ActorId]) VALUES (1, 1)

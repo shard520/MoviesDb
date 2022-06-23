@@ -68,6 +68,13 @@
     <PostDeploy Include="SeedScripts\InitialSeedData.PostDeployment1.sql" />
     <Build Include="StoredProcedures\GetMoviesWithActors.sql" />
     <Build Include="StoredProcedures\GetMovieByIdWithActors.sql" />
+    <Build Include="StoredProcedures\MergeMovie.sql" />
+    <Build Include="StoredProcedures\GetMovieIdFromName.sql" />
+    <Build Include="StoredProcedures\InsertActor.sql" />
+    <Build Include="StoredProcedures\InsertMovie.sql" />
+    <Build Include="StoredProcedures\InsertMovieActor.sql" />
+    <Build Include="StoredProcedures\UpdateMovie.sql" />
+    <Build Include="StoredProcedures\DeleteMovieAndMovieActors.sql" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">

@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Actors]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [Name] VARCHAR(50) NOT NULL, 
-    [CreatedDate] DATETIMEOFFSET NOT NULL, 
-    [UpdatedDate] DATETIMEOFFSET NULL
+    [ActorName] VARCHAR(50) NOT NULL UNIQUE, 
+    [CreatedDate] DATETIME2(7) NOT NULL, 
+    [UpdatedDate] DATETIME2(7) NULL
 )
